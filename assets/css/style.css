@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --green: #6db435;
+  --red: #e0201e;
+  --dark: #0b0d12;
+  --dark-card: #151822;
+  --text-muted: #bfc4d4;
+}
+
+body {
+  background: radial-gradient(circle at top, #121820, #050608 60%);
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,.4);
+}
+
+.nav-menu {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: color .3s;
+  font-size: 1.2rem;
+}
+
+.logo-text {
+  font-family: "Luckiest Guy";
+  font-size: 25px;
+  letter-spacing: .1em;
+  background: linear-gradient(90deg, var(--green), var(--red));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo-sub {
+  font-size: .7rem;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: url("../images/fundo.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-family: "Luckiest Guy";
+  font-size: 5rem;
+  width: fit-content;
+  background: linear-gradient(95deg, var(--green), var(--red));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.6rem;
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, var(--green), var(--red));
+  border-radius: 999px;
+  padding: .8rem 2rem;
+  color: black;
+}
+
+/* SECTIONS */
+.section-dark {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-family: "Luckiest Guy";
+  letter-spacing: .12em;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle, .section-text {
+  color: var(--text-muted);
+}
+
+/* PRODUCTS */
+.product-card {
+  background: var(--dark-card);
+  border-radius: 18px;
+  border: none;
+  transition: transform .3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-title {
+  font-family: "Luckiest Guy";
+  color: var(--green);
+}
+
+.btn-outline {
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-radius: 999px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 2rem;
+  background: #0a0c10;
+  color: #999;
+}
