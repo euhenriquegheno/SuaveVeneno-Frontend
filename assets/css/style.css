@@ -159,3 +159,21 @@ body {
 .text-green{
   color: var(--green);
 }
+
+.map-container iframe {
+  width: 100%;
+  height: 280px;
+}
+
+@media (min-width: 768px) {
+  .map-container iframe {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map-container iframe {
+    height: 500px;
+  }
+}
+
